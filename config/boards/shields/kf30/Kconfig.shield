@@ -1,2 +1,2 @@
 config SHIELD_KF30
-    def_bool $(shields_list_contains, kf30)
+    def_bool $(shields_list_contains,kf30)
