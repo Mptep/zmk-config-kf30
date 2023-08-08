@@ -12,10 +12,58 @@ My m-effin keyb
 
         default_layer {
             bindings = <
-                &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp J       &kp K       &kp O       &kp P       &kp ESC
-                &mo 1       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp U       &kp I       &kp L       &kp RSHFT
+                &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp J       &kp K       &kp O       &kp P       &kp BSPC
+                &mo 3       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp U       &kp I       &kp L       &kp RSHFT
                 &kp CLCK    &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp PERIOD  &kp LALT    &kp RET
-                &mo 1       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 1
+                &mo 1       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 2
+            >;  
+        };
+        fn1_layer {
+            bindings = <
+                &kp ESC     &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp N1      &kp N2      &kp N3      &kp N4      &kp DEL
+                &mo 4       &kp LSHFT   &kp R       &kp C       &kp L       &kp T       &kp P       &kp O       &kp E       &kp A       &kp N       &kp RSHFT
+                &kp LWIN    &kp LALT    &mo 4       &kp GRAVE   &kp MINUS   &kp LBKT    &kp RBKT    &kp SEMI    &kp COMMA   &mo 4       &kp RCTRL   &kp RET
+                &mo 1       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 2
+            >;  
+        };
+        fn2_layer {
+            bindings = <
+                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
+                &mo 4       &kp LSHFT   &kp R       &kp C       &kp L       &kp T       &kp P       &kp O       &kp E       &kp A       &kp N       &kp RSHFT
+                &kp LWIN    &kp LALT    &mo 4       &kp APOS    &kp EQUAL   &kp BSLH    &kp FSLH    &kp SEMI    &kp COMMA   &mo 4       &kp RCTRL   &kp RET
+                &mo 1       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 2
+            >;  
+        };
+        fn3_layer {
+            bindings = <
+                &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp J       &kp K       &kp O       &kp P       &kp BSPC
+                &mo 3       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp U       &kp I       &kp L       &kp RSHFT
+                &kp CLCK    &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp PERIOD  &kp LALT    &kp RET
+                &mo  5      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 6
+            >;  
+        };
+        navnum_layer {
+            bindings = <
+                &kp BSPC   &kp KP_MULTIPLY &kp KP_SLASH &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp PG_UP    &kp PG_DN   &kp END     &kp INS     &kp DEL
+                &mo 4      &kp KP_DOT      &kp KP_ENTER &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RSHFT
+                &kp KP_NUM &kp KP_N0       &kp KP_N1    &kp KP_N2   &kp KP_N3   &kp KP_PLUS &kp C_PREV   &kp C_NEXT  &kp C_RW    &kp C_FF    &kp C_PP    &kp RET
+                &mo 4      &kp SPACE       &kp SPACE    &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE    &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 4
+            >;  
+        };
+        gamecon_layer {
+            bindings = <
+                &kp ESC     &kp Q       &kp W       &kp E       &kp N1      &kp N2      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC
+                &mo 3       &kp LSHFT   &kp A       &kp S       &kp D       &kp N3      &kp C_BRI_UP &kp C_BRI_DN &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp RSHFT
+                &kp KP_NUM  &kp LCTRL   &kp Z       &kp X       &kp N4      &kp PSCRN   &bt BT_CLR   &bootloader  &sys_reset   &kp C_PWR   &kp LALT     &kp RET
+                &mo 5       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE    &kp SPACE    &kp SPACE    &kp SPACE    &kp SPACE    &mo 5
+            >;      
+        };
+        fn3alpha_layer {
+            bindings = <
+                &kp ESC     &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp N1      &kp N2      &kp N3      &kp N4      &kp DEL
+                &mo 3       &kp LSHFT   &kp R       &kp C       &kp L       &kp T       &kp P       &kp O       &kp E       &kp A       &kp N       &kp RSHFT
+                &kp WIN     &kp LALT    &mo 4       &kp APOS    &kp MINUS   &kp BSLH    &kp FSLH    &kp SEMI    &kp COMMA   &mo 4       &kp LALT    &kp RET
+                &mo 6       &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &mo 6
             >;  
         };
     };
