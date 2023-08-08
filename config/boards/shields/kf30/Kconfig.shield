@@ -1,2 +1,2 @@
-Config shield_KF30
+config SHIELD_KF30
     def_bool $(shields_list_contains, kf30)
