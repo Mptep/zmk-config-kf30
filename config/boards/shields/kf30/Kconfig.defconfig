@@ -1,6 +1,6 @@
 if SHIELD_KF30
 
-config KMK_KEYBOARD_NAME
+config ZMK_KEYBOARD_NAME
     default "kf30"
 
 endif
